@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function MovieReviews(props){
+export default function movieieReviews(props){
         return (
             <div className="review-list" >
                 {
-                props.reviews.map(mov=>{
+                props.reviews.map(movie=>{
                     return <div className="review">
-                    <img src={mov.multimedia.src} alt=""/>
-                    <p>{mov.display_title}</p>
+                    <img src={movie.multimedia.src} alt=""/>
+                    <p>{movie.display_title}</p>
                     </div>
                 })
                 }
